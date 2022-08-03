@@ -8,13 +8,11 @@ function App() {
   return (
     <UserContextProvider>
       <div className="App">
-        <div>
           <Router>
             <Routes>
-              <Route path="" exact element={<User/>}></Route>
+              <Route path="" element={<User/>}></Route>
             </Routes>
           </Router>
-        </div>
       </div>
     </UserContextProvider>
   );
