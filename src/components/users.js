@@ -20,7 +20,7 @@ async function getUsers(){
     })
     setUsersList(tempList)
 }
-catch(error){   console.log(error); }   
+catch(error){ console.log(error); }   
 }
 const [usersList,setUsersList] = useState();
 useEffect(() => {
@@ -30,7 +30,7 @@ useEffect(() => {
         <div className="details">
             All Users
             {usersList?.map((user) => {
-                return<>user.name</>
+                return<p>{user.name}</p>
             })}
 
             {/* {baseURL} */}
