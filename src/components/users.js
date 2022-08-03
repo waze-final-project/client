@@ -2,7 +2,7 @@
 import React, { useContext,useEffect } from 'react';
 import { UserContext } from '../context/user.context';
 import axios from 'axios';
-import { useState ,useEffect } from 'react';
+import { useState  } from 'react';
 
 
 export default function User(){
