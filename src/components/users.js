@@ -13,8 +13,8 @@ async function getUsers(){
     const res=await axios.get('http://localhost:3333/user');
     let tempList = res.data.map((item) => {
         let user = {
-            name:item.firstName+" "+item.lastNam,
-            ameil:item.email
+            name:item.firstName+" "+item.lastName,
+            email:item.email
         }
         return user;
     })
