@@ -14,7 +14,7 @@ async function getUsers(){
     let tempList = res.data.map((item) => {
         let user = {
             name:item.firstName+" "+item.lastName,
-            ameil:item.email
+            email:item.email
         }
         return user;
     })
