@@ -1,6 +1,6 @@
 /* eslint-disable react-hooks/exhaustive-deps */
-import React, { useContext,useEffect } from 'react';
 // import { UserContext } from '../context/user.context';
+import React, { useContext,useEffect } from 'react';
 import axios from 'axios';
 import { useState  } from 'react';
 
@@ -13,7 +13,7 @@ async function getUsers(){
     const res=await axios.get('http://localhost:3333/user');
     let tempList = res.data.map((item) => {
         let user = {
-            name:item.firstName+" "+item.lastNam,
+            name:item.firstName+" "+item.lastName,
             ameil:item.email
         }
         return user;
